@@ -2,34 +2,29 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
 
-
-class VelocityPublisher(Node):
+#Definicion de la clase
+class VelocitySubscriber(Node):
 
     def __init__(self):
-        super().__init__('velocity_publisher')
+	#Crea la suscripcion al topico /velocity con una cola de mensajes 10 
+        super().__init__('velocity_subscriber')
+        self.subscription_ = self.create_subscription(Float32,'/velocity',self.velocity_callback,10)
 
-        self.publisher_ = self.create_publisher(Float32,'/velocity',10)
-        self.Vel = 0.0
-        self.timer_ = self.create_timer(1.0,self.publish_velocity)
+    def velocity_callback(self, msg):
+	#Extraemos el valor del mensaje 
+        Velocity = msg.data
+	#mensaje en la terminal con la informacion con formato
+        self.get_logger().info(f'Vel = {Velocity:.1f} m/s')
 
-    def publish_velocity(self):
-        msg = Float32()
-        msg.data = self.Vel
-        self.publisher_.publish(msg)
-
-        self.get_logger().info(f'Vel = {self.Vel}')
-
-        if self.Vel < 1.5:
-            self.Vel = round(self.Vel + 0.1, 1)
-        else:
-            self.Vel = 0.0
 
 def main(args = None):
+#incializamos el ROS2, creamos la instancia de velocity, lo mantenemos en bucle con rclpy.spin  y destruimos el nodo y apagamos ROS2
     rclpy.init(args=args)
-    node = VelocityPublisher()
+    node = VelocitySubscriber()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()
