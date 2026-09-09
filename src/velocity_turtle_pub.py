@@ -10,17 +10,16 @@ class VelocityPublisher(Node):
 	#Creamos el publicador con el topico /velocity con un mensaje float32 
         self.publisher_ = self.create_publisher(Float32,'/velocity',10)
         self.Vel = 0.0
-        self.timer_ = self.create_timer(1.0,self.publish_velocity)
+        self.timer_ = self.create_timer(0.5,self.publish_velocity)
 
     def publish_velocity(self):
 	#instancia de objeto mensaje y guardamos el valor Vel en la data del mensaje 
         msg = Float32()
         msg.data = self.Vel
         self.publisher_.publish(msg)
-
         self.get_logger().info(f'Vel = {self.Vel}')
 
-        if self.Vel < 1.5:
+        if self.Vel < 1.2:
             self.Vel = round(self.Vel + 0.1, 1)
         else:
             self.Vel = 0.0
