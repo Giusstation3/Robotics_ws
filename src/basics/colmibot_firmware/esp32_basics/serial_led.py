@@ -1,5 +1,6 @@
 import serial
 import time
+#solo sirve para comunicarse directamente con el esp32 de forma serial. no usa ROS2 solo prueba  que el esp32 y el led funcionan bien sin meter ros
 
 PORT = '/dev/ttyUSB0'
 BAUDRATE = 115200
