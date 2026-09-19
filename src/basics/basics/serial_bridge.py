@@ -9,7 +9,7 @@ class SerialBridge(Node):
         super().__init__('serial_bridge')
 	#Creamos el subscriptor para led_command, cuando recibimos un mensaje de ahí llamamos a la función led call back
         self.subscription_ = self.create_subscription(Int32, '/led_command', self.led_callback,10)
-        self.serial_ = serial.Serial('/dev/ttyUSB0', 115200, timeout=1) #seleccionamos el puerto serial que queremos abrir
+        self.serial_ = serial.Serial('/dev/ttyUSB1', 115200, timeout=1) #seleccionamos el puerto serial que queremos abrir
 	
         self.get_logger().info('Esperando mensajes')
 	#recibe el mensaje cuando llega algo al topico ledcommand
