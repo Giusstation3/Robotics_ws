@@ -17,3 +17,7 @@ Entonces: led blink publica en el topico led command, serial bridge lo recibe y 
 Para el potenciometro ADC pot ino es el codigo que corre en el esp32m lee el valor analogico del potenciometro y lo envia al puerto serial. analog_serial_pub.py es un nodo de ROS2 que lee el puertoserial, valida el dato recibido sea numerico y lo publica en el topico analog. Finalmente analog_subs.py es un nodo de ROS2 que se subscribe a analog e imprime el valor en la consola. 
 
 Entonces: ADC pot lee el potenciometro, lo envia por serial, analog serial lo lee y lo publia en el topico analog y analog subs se subscribe y muestra el valor. 
+
+https://itam2-my.sharepoint.com/:v:/g/personal/giuseppe_valencia_itam_mx/IQD24rvGc3l6RpeFLLnsRiLkAZtS2jnp-Te1PqLik1AJaqI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wlsa7M
+
+https://itam2-my.sharepoint.com/:v:/g/personal/giuseppe_valencia_itam_mx/IQDTvJ8Aa1ItQpL3Y91QRFuWAX32gHcRe9HrK93OtXqhzjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xlEP1p
