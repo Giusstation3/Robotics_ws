@@ -17,6 +17,7 @@ class JoystickPublisher(Node):
      if self.serial_.in_waiting > 0: #si hay datos esperando en el puerto serial 
       linea = self.serial_.readline().decode().strip() #lee nuestra linea del serial  los convertimos a un string de python y le quitamos los espacios en blanco 
       partes = linea.split(',')
+      #Separamos el texto en partes para tener un publisher por cada eje
       textoX = int(partes[0])
       textoY = int(partes[1])
       msgX = Int32()
