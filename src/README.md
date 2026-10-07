@@ -21,3 +21,8 @@ Entonces: ADC pot lee el potenciometro, lo envia por serial, analog serial lo le
 https://itam2-my.sharepoint.com/:v:/g/personal/giuseppe_valencia_itam_mx/IQD24rvGc3l6RpeFLLnsRiLkAZtS2jnp-Te1PqLik1AJaqI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wlsa7M
 
 https://itam2-my.sharepoint.com/:v:/g/personal/giuseppe_valencia_itam_mx/IQDTvJ8Aa1ItQpL3Y91QRFuWAX32gHcRe9HrK93OtXqhzjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xlEP1p
+
+Act5 Launch Publicador y publicador
+Launch file inicia velocity publisher y velocity subscriber desde una sola terminal y los nodos se comunican por el topico velocity. 
+
+
