@@ -27,3 +27,12 @@ Launch file inicia velocity publisher y velocity subscriber desde una sola termi
 
 https://itam2-my.sharepoint.com/:v:/g/personal/giuseppe_valencia_itam_mx/IQAED8gTK2K8R4zGd7XNeJSXAT83ltlnTbUb047H0apBJxk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GIsUeb
 
+Act 6 Launch Turtle_joy_controller
+
+Un launch file inicia desde una sola terminal los tres nodos de la actividad 4 turtlesim, joystick_pub y turtle_controller. 
+El Joystick controla la tortuga a traves de los topicos /joystick x y y y turtle/cmd_vel
+
+https://itam2-my.sharepoint.com/:v:/g/personal/giuseppe_valencia_itam_mx/IQDTvJ8Aa1ItQpL3Y91QRFuWAX32gHcRe9HrK93OtXqhzjA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcmckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xlEP1p
+
+
+
